@@ -1,6 +1,5 @@
 .gradle
 .idea
-*.kts
 .gitattributes
 **/build/
 !src/**/build/
