@@ -5,7 +5,7 @@ package queue.core;
 
 public class App {
     public String getGreeting() {
-        return "Hello pepe!";
+        return "Hello JUAN!";
     }
 
     public static void main(String[] args) {
