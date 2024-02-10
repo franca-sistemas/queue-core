@@ -23,6 +23,8 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+    implementation ("com.sparkjava:spark-core:2.9.3")
+    implementation("org.slf4j:slf4j-simple:1.7.32")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
