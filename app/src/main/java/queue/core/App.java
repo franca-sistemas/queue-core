@@ -3,6 +3,10 @@
  */
 package queue.core;
 
+import spark.Request;
+
+import static spark.Spark.get;
+
 public class App {
     public String getGreeting() {
         return "Hello fede!";
@@ -10,5 +14,10 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        get("/ping", (req, res) -> buildAnswer(req));
+    }
+
+    private static String buildAnswer(Request req) {
+        return "pong";
     }
 }
